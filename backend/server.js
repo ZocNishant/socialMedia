@@ -13,6 +13,10 @@ app.get("/", (req, res) => {
   res.status(200).send("Hello from backend.");
 });
 
+app.post("/", (req, res) => {
+  const data = req.body;
+});
+
 // Listener
 app.listen(9000, () => {
   console.log("Hello from the server side.");
