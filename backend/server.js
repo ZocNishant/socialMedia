@@ -9,10 +9,13 @@ app.use(cors());
 app.use(express.json());
 
 // API Endpoints
+
+// Get Request
 app.get("/", (req, res) => {
   res.status(200).send("Hello from backend.");
 });
 
+// Post Request
 app.post("/", (req, res) => {
   const data = req.body;
 });
