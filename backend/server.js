@@ -1,8 +1,13 @@
 import express from "express";
 import cors from "cors";
+import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 // App config
 const app = express();
+
+mongoose.connect(process.env.MONGO_URI);
 
 // Middleware
 app.use(cors());
