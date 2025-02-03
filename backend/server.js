@@ -17,7 +17,7 @@ app.use(express.json());
 
 // Get Request
 app.get("/", (req, res) => {
-  res.status(200).send("Hello from backend side.");
+  res.status(200).send("Hello from backend side yess.");
 });
 
 // Post Request
